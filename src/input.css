@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*Background Image Css*/
+.imageCss {
+    @apply text-white text-center bg-no-repeat bg-origin-border bg-cover;
+}
