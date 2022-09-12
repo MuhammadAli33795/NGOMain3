@@ -7,40 +7,63 @@
 
      <!--Link Output.css-->
     <link rel="stylesheet" href="/dist/output.css">
+
+    <!--For Icon Library-->
+    <script src="https://kit.fontawesome.com/47b1991570.js" crossorigin="anonymous"></script>
+
     <!--Document Title-->
     <title>Document</title>
 </head>
 <body>
-    <section class="bg-backImage imageCss">
+    <section class="bg-backImageS bg-slate-500 sm:bg-backImage imageCss">
         <!--Header-->
-        <header>
-            <div>
-                <h5>Some text here</h5>
-            </div>
-            <div>
-                <a href="">FB-</a>
-                <a href="">TW-</a>
-                <a href="">IN-</a>
-                <a href="">PI</a>
+        <header class="">
+            <div class="flex justify-between">
+                <div class="text-start">
+                    <h5>Some text here</h5>
+                </div>
+                <div>
+                    <a href="">FB-</a>
+                    <a href="">TW-</a>
+                    <a href="">IN-</a>
+                    <a href="">PI</a>
+                </div>
             </div>
 
             <!--Nav Bar-->
             <nav>
-                <h2>ChariTeam</h2>
-                <p>links -: a, b, c, d</p>
+                <div class="flex justify-between items-center">
+                    <!--Heading-->
+                    <h2 class="navH"><span class="hColor">Chari</span>Team</h2>
+                    
+                    <!--Nav tab for Mobile screens-->
+                    <div class="cursor-pointer sm:hidden" id="menue">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                </div>
+
+                <!--Nav Links-->
+                <div class="" id="link">
+                    <a href="">Main-</a>
+                    <a href="">Content-</a>
+                    <a href="">Price-</a>
+                    <a href="">Info</a>
+                </div>
             </nav>
         </header>
 
         <!--Main-->
-        <main>
+        <main class="text-center">
             <h1>Heading Towards you</h1>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
                 Provident dignissimos ad, repudiandae perspiciatis ullam alias<br>
-                reiciendis vero fugit ab nesciunt voluptatum odit<br>
-                aliquam numquam possimus nostrum! Obcaecati architecto<br>
-                magnam qui?
+                reiciendis vero fugit ab<br> nesciunt 
             </p>
+            <!--Button-->
+            <div class="py-5">
+                <a href="" class="px-3 py-2 bg-orange-500">Download</a>
+            </div>
         </main>
     </section>
 </body>

@@ -3,5 +3,32 @@
 @tailwind utilities;
 /*Background Image Css*/
 .imageCss {
-    @apply text-white text-center bg-no-repeat bg-origin-border bg-cover;
+    @apply text-white bg-no-repeat bg-origin-border bg-cover bg-center;
 }
+/*Text size H2*/
+.textSizeh2 {
+    @apply  text-base;
+}
+
+
+/*Nav Css*/
+/*Nav Heading*/
+.navH {
+    @apply text-3xl;
+}
+/*Chari Team color*/
+.hColor {
+    @apply text-orange-400;
+}
+
+/*Main Css*/
+
+/*Section 1*/
+
+/*Section 2*/
+
+/*Section 3*/
+
+/*Section 4*/
+
+/*Footer*/

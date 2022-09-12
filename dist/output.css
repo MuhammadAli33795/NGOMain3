@@ -551,17 +551,111 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-backImage {
-  background-image: url('/img/Background image.jpg');
+.flex {
+  display: flex;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
+.bg-backImageS {
+  background-image: url('/img/courses-1.jpg');
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
 }
 
 /*Background Image Css*/
 
 .imageCss {
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-origin: border-box;
-  text-align: center;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/*Text size H2*/
+
+.textSizeh2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/*Nav Css*/
+
+/*Nav Heading*/
+
+.navH {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+/*Chari Team color*/
+
+.hColor {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+
+/*Main Css*/
+
+/*Section 1*/
+
+/*Section 2*/
+
+/*Section 3*/
+
+/*Section 4*/
+
+/*Footer*/
+
+@media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:bg-backImage {
+    background-image: url('/img/Background image.jpg');
+  }
 }
