@@ -1,47 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!--Link Output.css-->
+    <!--Link Output.css-->
     <link rel="stylesheet" href="/dist/output.css">
+
+    <!--For Icon Library-->
+    <script src="https://kit.fontawesome.com/47b1991570.js" crossorigin="anonymous"></script>
+
     <!--Document Title-->
-    <title>Document</title>
+    <title>NGOPage</title>
 </head>
+
 <body>
-    <section class="bg-backImage imageCss">
+    <section class="bg-backImageS bg-slate-500 sm:bg-backImage imageCss">
         <!--Header-->
-        <header>
-            <div>
-                <h5>Some text here</h5>
-            </div>
-            <div>
-                <a href="">FB-</a>
-                <a href="">TW-</a>
-                <a href="">IN-</a>
-                <a href="">PI</a>
+        <header class="LFpadding">
+            <div class="flex justify-between">
+                <div class="text-start">
+                    <h5>Some text here</h5>
+                </div>
+                <!--Links-->
+                <div>
+                    <!--Twitter-->
+                    <a href="/" class="hoverLinks"><i class="fa-brands fa-twitter"></i></a>
+                    <!--Facebook-->
+                    <a href="/" class="hoverLinks"><i class="fa-brands fa-facebook"></i></a>
+                    <!--Instagram-->
+                    <a href="/" class="hoverLinks"><i class="fa-brands fa-instagram"></i></a>
+                    <!--pinterest-->
+                    <a href="/" class="hoverLinks"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
             </div>
 
             <!--Nav Bar-->
-            <nav>
-                <h2>ChariTeam</h2>
-                <p>links -: a, b, c, d</p>
+            <nav class="sm:flex sm:justify-between sm:items-center">
+                <div class="flex justify-between items-center">
+                    <!--Heading-->
+                    <h2 class="navH"><span class="hColor">Chari</span>Team</h2>
+
+                    <!--Nav tab for Mobile screens-->
+                    <div class="cursor-pointer sm:hidden" id="menue">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                </div>
+
+                <!--Nav Links-->
+                <div class="hidden sm:block" id="link">
+                    <div class="flex justify-end gap-5 sm:gap-10 md:gap-14 lg:gap-20 xl:gap-24">
+                        <a href="" class="hoverLinks">Main</a>
+                        <a href="" class="hoverLinks">Content</a>
+                        <a href="" class="hoverLinks">Price</a>
+                        <a href="" class="hoverLinks">Info</a>
+                    </div>
+                </div>
             </nav>
         </header>
 
         <!--Main-->
-        <main>
-            <h1>Heading Towards you</h1>
-            <p>
+        <main class="text-center LFpadding TBpadding">
+            <h1 class="mainHeading">Let's Chnge The World<br>With Humanity</be></h1>
+            <p class="sentenceSpacing">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
                 Provident dignissimos ad, repudiandae perspiciatis ullam alias<br>
-                reiciendis vero fugit ab nesciunt voluptatum odit<br>
-                aliquam numquam possimus nostrum! Obcaecati architecto<br>
-                magnam qui?
+                reiciendis vero fugit ab<br> nesciunt
             </p>
+            <!--Button-->
+            <div class="">
+                <a href="" class="button">Download</a>
+            </div>
         </main>
     </section>
+
+    <!--Section 1 LPic/RText-->
+    <section class="text-center lg:text-start LFpadding TBpadding lg:flex justify-between lg:gap-10">
+        <!--Left Image-->
+        <div class="sentenceSpacing">
+            <img src="/img/about-1.jpg" alt="Chari Team Pic" class="lg:max-w-md">
+        </div>
+        <!--Right Text-->
+        <div>
+            <!--Small Text 1-->
+            <span class="smallText1">Lorem Ippsum</span>
+            <!--Heading-->
+            <h2 class="sentenceSpacing textSizeh2 lg:mt-5">We Help People In Need<br>Around The World</h2>
+            <!--Paragraph 1-->
+            <p class="sentenceSpacing paragraph1Css">
+                Lorem ipsum dolor sit, amet consectetur adipisicing<br>
+                elit. Voluptatibus excepturi vitae commodi temporibus,<br>
+                repellat similique rem quas ad aliquam magnam<br> quae officia alias in amet dolorem,
+            </p>
+            <!--Paragraph 2-->
+            <p class="sentenceSpacing">
+                Lorem, ipsum dolor sit amet consectetur adipisicing<br>
+                elit. Temporibus accusamus perspiciatis beatae<br>
+                culpa laudantium aliquam optio, repudiandae<br>
+            </p>
+            <!--Buttons-->
+            <div class="text-white">
+                <a href="" class="button">Download</a>
+                <a href="" class="button">Download</a>
+            </div> 
+        </div>
+    </section>
+
+    <!--Section 2 3Pics in center-->
+        <section class="LFpadding TBpadding text-center bg-slate-100">
+            <!--Small Text 1-->
+            <span class="smallText1">Lorem Ippsum</span>
+            <!--Heading-->
+            <h2 class="sentenceSpacing textSizeh2">
+                Every Child Deserves The<br> Opportunity To Learn</h2>
+
+
+            <!--Image Boxes-->
+            <div class="lg:flex justify-between gap-10">
+                <!--Image 1-->
+                <div class="text-center flex justify-center">
+                    <div>
+                        <!--Small Text 1-->
+                        <div class="topB">
+                            <span class="smallText1">Lorem Ippsum</span>
+                        
+                            <!--heading-->
+                            <h4 class="textSizeh4 sentenceSpacing">Education For Milking Cows</h4>
+                            <!--Paragraph-->
+                            <p class="pb-5">
+                                Lorum ippsum degrado le buxo<br>
+                                seniorita le dance heel pawi dad<br>
+                                Numbers
+                            </p>
+                        </div>
+                        <!--Image-->    
+                        <img src="/img/courses-1.jpg" alt="Childerns Runing" class="">
+                    </div>
+                </div>
+
+                <!--Image 2-->
+                <div class="text-center flex justify-center sentenceSpacing lg:my-0">
+                    <div>
+                        <!--Small Text 1-->
+                        <div class="topB">
+                            <span class="smallText1">Lorem Ippsum</span>
+                
+                            <!--heading-->
+                            <h4 class="textSizeh4 sentenceSpacing">Ensure Poor Quality Water</h4>
+                            <!--Paragraph-->
+                            <p class="pb-5">
+                                Lorum ippsum degrado le buxo<br>
+                                seniorita le dance heel pawi dad<br>
+                                Numbers
+                            </p>
+                        </div>
+                        <!--Image-->
+                        <img src="/img/courses-2.jpg" alt="Childerns Runing" class="">
+                    </div>
+                </div>
+
+                <!--Image 3-->
+                <div class="text-center flex justify-center sentenceSpacing lg:my-0">
+                    <div>
+                        <!--Small Text 1-->
+                        <div class="topB">
+                            <span class="smallText1">Lorem Ippsum</span>
+                
+                            <!--heading-->
+                            <h4 class="textSizeh4 sentenceSpacing">Ensure Medical Treatment</h4>
+                            <!--Paragraph-->
+                            <p class="pb-5">
+                                Lorum ippsum degrado le buxo<br>
+                                seniorita le dance heel pawi dad<br>
+                                Numbers
+                            </p>
+                        </div>
+                        <!--Image-->
+                        <img src="/img/courses-3.jpg" alt="Childerns Runing" class="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--Section 3 LText/RForm-->
+        <section class="LFpadding TBpadding text-center bg-teal-900 text-white md:flex md:justify-between">
+            <!--Left Text-->
+            <div class="md:text-start">
+
+                <!--Small Text 1-->
+                <span class="smallText1 text-orange-500 bg-white">Lorem Ippsum</span>
+
+                <!--Heading-->
+                <h2 class="sentenceSpacing textSizeh2 lg:mt-5">
+                    Thanks For The Results<br> Achieved With You
+                </h2>
+
+                <!--Paragraph-->
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing<br>
+                    elit. Ex perferendis quod vitae porro adipisci, quidem vel<br>
+                    beatae in, sed maxime ab, repudiandae delectus<br>
+                </p>
+            </div>
+            <!--Right Form-->
+            <div class="flex justify-center">
+            <form class="sentenceSpacing lg:my-0 form w-max">
+                <input type="text" name="fname" id="fname" placeholder="First Name" class="textBox"><br>
+                <!--Last Name-->
+                <input type="text" name="lname" id="lname" placeholder="Last Name" class="textBox"><br>
+                
+                <!--Buttons-->
+                <input type="button" value="300$" class="buttonBox">
+                <input type="button" value="200$" class="buttonBox">
+                <input type="button" value="100$" class="buttonBox"><br>
+                
+                <!--Submit-->
+                <input type="submit" value="Donate Now"
+                    class="submitBox sentenceSpacing">
+            </form>
+            </div>
+        </section>
+
+    <!--Section 4 4PicsCenter/BText-->
+
+    <!--Footer-->
+    <script src="/src/index.js"></script>
 </body>
+
 </html>
