@@ -2,80 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 /*Global classes*/
-/*Background Image Css*/
-.imageCss {
-    @apply text-white bg-no-repeat bg-origin-border bg-cover bg-center;
-}
-/*Heading sizes*/
-/*Text size H2*/
-.textSizeh2 {
-    @apply  text-2xl sm:text-4xl lg:text-3xl sm:font-bold xl:text-5xl;
-}
-/*Text size H4*/
-.textSizeh4 {
-    @apply font-bold sm:text-3xl lg:text-lg;
-}
+    /*Background Image Css*/
+        .imageCss {
+            @apply text-white bg-no-repeat bg-origin-border bg-cover bg-center;
+        }
+    /*Heading sizes*/
+        /*Text size H2*/
+            .textSizeh2 {
+                @apply  text-2xl sm:text-4xl lg:text-3xl sm:font-bold xl:text-5xl;
+            }
+        /*Text size H4*/
+            .textSizeh4 {
+                @apply font-bold sm:text-3xl lg:text-lg;
+            }
 
-/*Button CSS*/
-/*Buttons*/
-.button {
-    @apply px-3 py-2 bg-orange-500 hover:bg-orange-600;
-}
-/*Links hover color*/
-.hoverLinks {
-    @apply hover:text-orange-500;
-}
+    /*Button CSS*/
+        /*Buttons*/
+            .button {
+                @apply px-3 py-2 bg-orange-500 hover:bg-orange-600;
+            }
+        /*Links hover color*/
+            .hoverLinks {
+                @apply hover:text-orange-500;
+            } 
 
-/*Spacing*/
-/*Left and Right Padding*/
-.LFpadding {
-    @apply px-3 sm:px-10 md:px-14 lg:px-20 xl:px-24;
-}
-/*Top and Bottum Padding*/
-.TBpadding {
-    @apply py-5 sm:py-10 md:py-14 lg:py-20 xl:py-24;
-}
-/*In Between Words Spacing*/
-.sentenceSpacing {
-    @apply my-4 sm:my-10;
-}
+    /*Spacing*/
+        /*Left and Right Padding*/
+            .LFpadding {
+                @apply px-3 sm:px-10 md:px-14 lg:px-20 xl:px-24;
+            }
+        /*Top and Bottum Padding*/
+            .TBpadding {
+                @apply py-5 sm:py-10 md:py-14 lg:py-20 xl:py-24;
+            }
+        /*In Between Words Spacing*/
+            .sentenceSpacing {
+                @apply my-4 sm:my-10;
+            }
 
-
-/*Small Text 1*/
-.smallText1 {
-    @apply p-px text-sm bg-orange-200 border-orange-400 border;
-}
-/*TOp Border of section 2 Images*/
-.topB {
-    @apply  bg-slate-200 border-t-2 border-orange-500 shadow-xl ;
-}
+    /*Small Texts*/
+        /*Small Text 1*/
+            .smallText1 {
+                @apply p-px text-sm text-orange-500 bg-orange-200 border-orange-300 border-2;
+            }
+        /*Small Text 1*/
+            .smallText2 {
+                @apply p-1 text-sm bg-orange-500 text-white;
+            }
 
 /*Nav Css*/
-/*Nav Heading*/
-.navH {
-    @apply text-3xl;
-}
-/*Chari Team color*/
-.hColor {
-    @apply text-orange-400;
-}
+    /*Nav Heading*/
+        .navH {
+            @apply text-3xl;
+        }
+    /*Chari Team color*/
+        .hColor {
+            @apply text-orange-400;
+        }
+
 
 /*Main Css*/
-/*Main Heading*/
-.mainHeading {
-    @apply text-2xl sm:text-5xl lg:text-7xl;
-}
+    /*Main Heading*/
+        .mainHeading {
+            @apply text-2xl sm:text-5xl lg:text-7xl;
+        }
+
 
 /*Section 1*/
-/*Text Paragraph 1 Css*/
-.paragraph1Css {
-    @apply p-2 bg-slate-200 border-b-2 border-orange-500;
-}
+    /*Text Paragraph 1 Css*/
+        .paragraph1Css {
+            @apply p-2 bg-slate-200 border-b-2 border-orange-500;
+        }
 
 /*Section 2*/
+    /*TOp Border of section 2 Images*/
+            .topB {
+                @apply  bg-slate-200 border-t-2 border-orange-500 shadow-2xl ;
+            }
+
+
+/*Section 3*/
     /*Form*/
         .form {
-            @apply bg-white p-2 md:py-px lg:p-8 xl:p-10;
+            @apply bg-white p-2 sm:px-5 md:py-px lg:p-8 xl:p-10 shadow-xl;
         }
     /*Text Box*/
         .textBox {
@@ -89,8 +98,26 @@
         .submitBox {
             @apply p-2 text-white bg-orange-500 border-2 border-orange-500 cursor-pointer lg:mb-0 lg:mt-2 hover:bg-orange-600;
         }
-/*Section 3*/
-
 /*Section 4*/
-
+    /*Image Boxes*/
+        .imageBoxesS4 {
+            @apply sentenceSpacing flex justify-center lg:shadow-xl;
+        }
+        /*Paragrph Css*/
+            .ParaCssS4 {
+                @apply font-bold py-2 sm:py-3 bg-slate-200;
+            }
+    /*Testomonial Image*/
+        .testImage {
+            @apply rounded-full border-4 border-orange-500;
+        }
+    /*Paragrph Css Bottum*/
+        .paraBS4 {
+            @apply text-white sm:p-6 bg-orange-500 max-w-xs sm:max-w-lg;
+        }       
 /*Footer*/
+    /*Section 1*/
+        /* Links*/
+        .linkBorder {
+            @apply border p-px px-1  border-white rounded-lg;
+        }
