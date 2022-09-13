@@ -6,14 +6,27 @@
 .imageCss {
     @apply text-white bg-no-repeat bg-origin-border bg-cover bg-center;
 }
+/*Heading sizes*/
 /*Text size H2*/
 .textSizeh2 {
-    @apply  text-2xl sm:text-4xl lg:text-3xl lg:font-bold xl:text-5xl;
+    @apply  text-2xl sm:text-4xl lg:text-3xl sm:font-bold xl:text-5xl;
+}
+/*Text size H4*/
+.textSizeh4 {
+    @apply font-bold sm:text-3xl lg:text-lg;
+}
+
+/*Button CSS*/
+/*Buttons*/
+.button {
+    @apply px-3 py-2 bg-orange-500 hover:bg-orange-600;
 }
 /*Links hover color*/
 .hoverLinks {
     @apply hover:bg-orange-500;
 }
+
+/*Spacing*/
 /*Left and Right Padding*/
 .LFpadding {
     @apply px-3 sm:px-10 md:px-14 lg:px-20 xl:px-24;
@@ -24,16 +37,19 @@
 }
 /*In Between Words Spacing*/
 .sentenceSpacing {
-    @apply my-5 sm:my-10;
+    @apply my-4 sm:my-10;
 }
-/*Buttons*/
-.button {
-    @apply px-3 py-2 bg-orange-500 hover:bg-orange-600;
-}
+
+
 /*Small Text 1*/
 .smallText1 {
     @apply p-px text-sm bg-orange-200 border-orange-400 border;
 }
+/*TOp Border of section 2 Images*/
+.topB {
+    @apply  bg-slate-200 border-t-2 border-orange-500 shadow-xl ;
+}
+
 /*Nav Css*/
 /*Nav Heading*/
 .navH {
