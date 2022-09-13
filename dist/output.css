@@ -613,8 +613,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-backImageS {
-  background-image: url('/img/Background imageS.jpg');
+.bg-backImage {
+  background-image: url('/img/Background image.jpg');
 }
 
 .pb-5 {
