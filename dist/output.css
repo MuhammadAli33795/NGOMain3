@@ -584,28 +584,8 @@ video {
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
-.bg-orange-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
-}
-
 .bg-backImageS {
   background-image: url('/img/Background imageS.jpg');
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -614,6 +594,11 @@ video {
 
 .text-start {
   text-align: start;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /*Global classes*/
@@ -632,8 +617,30 @@ video {
 /*Text size H2*/
 
 .textSizeh2 {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 640px) {
+  .textSizeh2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textSizeh2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1280px) {
+  .textSizeh2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 /*Links hover color*/
@@ -680,37 +687,80 @@ video {
 
 /*Top and Bottum Padding*/
 
-.LFpadding {
+.TBpadding {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
 @media (min-width: 640px) {
-  .LFpadding {
+  .TBpadding {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 }
 
 @media (min-width: 768px) {
-  .LFpadding {
+  .TBpadding {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .LFpadding {
+  .TBpadding {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .LFpadding {
+  .TBpadding {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+}
+
+/*In Between Words Spacing*/
+
+.sentenceSpacing {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .sentenceSpacing {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/*Buttons*/
+
+.button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
+/*Small Text 1*/
+
+.smallText1 {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
+  padding: 1px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 /*Nav Css*/
@@ -731,7 +781,39 @@ video {
 
 /*Main Css*/
 
+/*Main Heading*/
+
+.mainHeading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 640px) {
+  .mainHeading {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainHeading {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
 /*Section 1*/
+
+/*Text Paragraph 1 Css*/
+
+.paragraph1Css {
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(249 115 22 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
 
 /*Section 2*/
 
@@ -768,5 +850,27 @@ video {
 
   .sm\:bg-backImage {
     background-image: url('/img/Background image.jpg');
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:max-w-md {
+    max-width: 28rem;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .lg\:text-start {
+    text-align: start;
   }
 }
