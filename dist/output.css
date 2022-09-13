@@ -1067,16 +1067,12 @@ video {
     max-width: 28rem;
   }
 
-  .lg\:gap-10 {
-    gap: 2.5rem;
-  }
-
-  .lg\:gap-16 {
-    gap: 4rem;
-  }
-
   .lg\:gap-20 {
     gap: 5rem;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:text-start {
