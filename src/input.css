@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/*Global classes*/
 /*Background Image Css*/
 .imageCss {
     @apply text-white bg-no-repeat bg-origin-border bg-cover bg-center;
@@ -8,6 +9,18 @@
 /*Text size H2*/
 .textSizeh2 {
     @apply  text-base;
+}
+/*Links hover color*/
+.hoverLinks {
+    @apply hover:bg-orange-500;
+}
+/*Left and Right Padding*/
+.LFpadding {
+    @apply px-3 sm:px-10 md:px-14 lg:px-20 xl:px-24;
+}
+/*Top and Bottum Padding*/
+.LFpadding {
+    @apply py-5 sm:py-10 md:py-14 lg:py-20 xl:py-24;
 }
 
 

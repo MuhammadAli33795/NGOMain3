@@ -555,6 +555,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -563,8 +567,16 @@ video {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .bg-slate-500 {
@@ -578,7 +590,7 @@ video {
 }
 
 .bg-backImageS {
-  background-image: url('/img/courses-1.jpg');
+  background-image: url('/img/Background imageS.jpg');
 }
 
 .py-5 {
@@ -604,6 +616,8 @@ video {
   text-align: start;
 }
 
+/*Global classes*/
+
 /*Background Image Css*/
 
 .imageCss {
@@ -620,6 +634,83 @@ video {
 .textSizeh2 {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+/*Links hover color*/
+
+.hoverLinks:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
+/*Left and Right Padding*/
+
+.LFpadding {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .LFpadding {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .LFpadding {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .LFpadding {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .LFpadding {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+/*Top and Bottum Padding*/
+
+.LFpadding {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .LFpadding {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .LFpadding {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .LFpadding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .LFpadding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 /*Nav Css*/
@@ -651,8 +742,28 @@ video {
 /*Footer*/
 
 @media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:gap-10 {
+    gap: 2.5rem;
   }
 
   .sm\:bg-backImage {

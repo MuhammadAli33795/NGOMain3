@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!--Link Output.css-->
+    <!--Link Output.css-->
     <link rel="stylesheet" href="/dist/output.css">
 
     <!--For Icon Library-->
     <script src="https://kit.fontawesome.com/47b1991570.js" crossorigin="anonymous"></script>
 
     <!--Document Title-->
-    <title>Document</title>
+    <title>NGOPage</title>
 </head>
+
 <body>
     <section class="bg-backImageS bg-slate-500 sm:bg-backImage imageCss">
         <!--Header-->
-        <header class="">
+        <header class="LFpadding">
             <div class="flex justify-between">
                 <div class="text-start">
                     <h5>Some text here</h5>
                 </div>
+                <!--Links-->
                 <div>
-                    <a href="">FB-</a>
-                    <a href="">TW-</a>
-                    <a href="">IN-</a>
-                    <a href="">PI</a>
+                    <!--Twitter-->
+                    <a href="/" class="hoverLinks"><i class="fa-brands fa-twitter"></i></a>
+                    <!--Facebook-->
+                    <a href="/" class="hoverLinks"><i class="fa-brands fa-facebook"></i></a>
+                    <!--Instagram-->
+                    <a href="/" class="hoverLinks"><i class="fa-brands fa-instagram"></i></a>
+                    <!--pinterest-->
+                    <a href="/" class="hoverLinks"><i class="fa-brands fa-pinterest"></i></a>
                 </div>
             </div>
 
             <!--Nav Bar-->
-            <nav>
+            <nav class="sm:flex sm:justify-between sm:items-center">
                 <div class="flex justify-between items-center">
                     <!--Heading-->
                     <h2 class="navH"><span class="hColor">Chari</span>Team</h2>
-                    
+
                     <!--Nav tab for Mobile screens-->
                     <div class="cursor-pointer sm:hidden" id="menue">
                         <span><i class="fa-solid fa-bars"></i></span>
@@ -43,11 +50,13 @@
                 </div>
 
                 <!--Nav Links-->
-                <div class="" id="link">
-                    <a href="">Main-</a>
-                    <a href="">Content-</a>
-                    <a href="">Price-</a>
-                    <a href="">Info</a>
+                <div class="hidden sm:block" id="link">
+                    <div class="flex justify-end gap-5 sm:gap-10">
+                        <a href="" class="hoverLinks">Main</a>
+                        <a href="" class="hoverLinks">Content</a>
+                        <a href="" class="hoverLinks">Price</a>
+                        <a href="" class="hoverLinks">Info</a>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -58,7 +67,7 @@
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
                 Provident dignissimos ad, repudiandae perspiciatis ullam alias<br>
-                reiciendis vero fugit ab<br> nesciunt 
+                reiciendis vero fugit ab<br> nesciunt
             </p>
             <!--Button-->
             <div class="py-5">
@@ -66,5 +75,7 @@
             </div>
         </main>
     </section>
+    <script src="/src/index.js"></script>
 </body>
+
 </html>
